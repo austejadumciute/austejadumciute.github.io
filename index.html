@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vilniaus miesto DNR</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">
+      <img src="img/logo.png" width="30" height="30">
+      Vilniaus miesto DNR
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Pradžia</a></li>
+      <li><a href="#about">Apie</a></li>
+      <li><a href="#maps">Žemėlapiai</a></li>
+      <li><a href="#contact">Kontaktai</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Vilniaus miesto<br />DNR</h1>
+      <p>Atrask Vilniaus miesto verslo galimybes naudodamasisi interaktyviais GIS žemėlapiais ir duomenų analize.</p>
+      <div class="hero-buttons">
+        <a href="#maps" class="btn-primary">Naršyti žemėlapius</a>
+        <a href="#contact" class="btn-outline">Susisiekite</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="description">
+    <div class="description-top">
+      <div class="description-left">
+        <h2>Kodėl verta <em>investuoti į Vilnių?</em></h2>
+      </div>
+      <div class="description-right">
+        <p>
+          Vilnius – sparčiai augantis Baltijos regiono miestas, kuriame verslo galimybės formuojasi kasdien. Čia duomenys virsta sprendimais, o erdvė – realiu potencialu.<br>
+          Šiame portale interaktyvūs žemėlapiai leidžia pažvelgti į Vilnių kitaip – ne tik kaip į gatves ar pastatus, bet kaip į gyvą sistemą, kur matosi verslo vietos, gyventojų tankis, infrastruktūra ir miesto augimo kryptys.
+          Visa tai paremta atvirais erdviniais duomenimis, apjungiančiais informaciją apie gyventojus, įmones, sklypus ir miesto struktūrą į vieną vaizdą – Vilniaus miesto DNR.<br><br>
+          Tai demonstracinė svetainė, visas joje pateikiamas turinys yra skirtas mokymo tikslams.
+        </p>
+        <a href="#maps" class="btn-explore">Naršyti žemėlapius →</a>
+      </div>
+    </div>
+
+    <div class="description-cards">
+      <div class="description-card">
+        <div class="card-icon">👥</div>
+        <h3>642 000 gyventojų</h3>
+        <p>Augantis miestas, kuriame kasdien susitinka žmonės iš skirtingų šalių, idėjų ir kultūrų.</p>
+      </div>
+      <div class="description-card">
+        <div class="card-icon">📈</div>
+        <h3>45.8% BVP</h3>
+        <p>Beveik pusė Lietuvos ekonomikos sukuriama Vilniuje.</p>
+      </div>
+      <div class="description-card">
+        <div class="card-icon">🏢</div>
+        <h3>Verslo centras</h3>
+        <p>Daugiau nei 40 000 registruotų įmonių mieste.</p>
+      </div>
+      <div class="description-card">
+        <div class="card-icon">🌍</div>
+        <h3>Augantis startuolių centras</h3>
+        <p>Vilnius – namai tokiems vardams kaip Vinted, Nord Security, Oxylabs ir Hostinger.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPS -->
+  <main id="maps" class="maps">
+    <div class="maps-header">
+      <h2>Vilniaus miesto <em>žemėlapiai</em></h2>
+      <div class="maps-arrows">
+        <button class="arrow-btn" id="prevBtn">←</button>
+        <button class="arrow-btn active" id="nextBtn">→</button>
+      </div>
+    </div>
+
+    <div class="maps-grid">
+      <div class="map-card">
+        <div class="map-card-image">
+          <img src="img/map_1.png" alt="Gyventojai" />
+        </div>
+        <div class="map-card-text">
+          <h3>Vilniaus gyventojų struktūra</h3>
+          <p>Interaktyvus žemėlapis, atskleidžiantis Vilniaus gyventojų pasiskirstymą pagal skaičių, lytį ir amžiaus grupes.</p>
+          <a href="pages/map_1.html" class="btn-map">Naršyti žemėlapį →</a>
+        </div>
+      </div>
+
+      <div class="map-card">
+        <div class="map-card-image">
+          <img src="img/map_2.png" alt="Gyventojų tankumas" />
+        </div>
+        <div class="map-card-text">
+          <h3>Įmonių pokyčiai</h3>
+          <p>Interaktyvus laiko juostos žemėlapis, rodantis Vilniaus įmonių registravimo ir išregistravimo dinamiką nuo 1990 metų.</p>
+          <a href="pages/map_2.html" class="btn-map">Naršyti žemėlapį →</a>
+        </div>
+      </div>
+
+      <div class="map-card">
+        <div class="map-card-image">
+          <img src="img/map_3.png" alt="WMS ortofoto" />
+        </div>
+        <div class="map-card-text">
+          <h3>Vilniaus sklypų paskirtys</h3>
+          <p>Interaktyvus žemėlapis, kuriame vaizduojamas Vilniaus miesto sklypų zonavimas ir naudojimo paskirtys – nuo infrastruktūros teritorijų iki gyvenamųjų bei kitų funkcinio naudojimo tipų.</p>
+          <a href="pages/map_3.html" class="btn-map">Naršyti žemėlapį →</a>
+        </div>
+      </div>
+
+      <div class="map-card">
+        <div class="map-card-image">
+          <img src="img/map_4.png" alt="Vilniaus pastatai" />
+        </div>
+        <div class="map-card-text">
+          <h3>Vilniaus pastatai</h3>
+          <p>Interaktyvus žemėlapis, kuriame Vilniaus miesto pastatai susiejami su jų naudojimo paskirtimis ir juos apimančiais žemės sklypais.</p>
+          <a href="pages/map_4.html" class="btn-map">Naršyti žemėlapį →</a>
+        </div>
+      </div>
+
+      <div class="map-card">
+        <div class="map-card-image">
+          <img src="img/map_5.png" alt="Investiciniai objektai" />
+        </div>
+        <div class="map-card-text">
+          <h3>Gatvių, eismo įvykių ir policijos duomenys</h3>
+          <p>Vilniaus miesto gatvių žemėlapis, integruojantis eismo įvykių ir policijos registro duomenis.</p>
+          <a href="pages/map_5.html" class="btn-map">Naršyti žemėlapį →</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- INVEST -->
+  <section id="invest" class="invest">
+    <div class="invest-card">
+      <span class="invest-label">Investicinės vietos</span>
+      <h2>Pasiūlykite savo <em>investicinę vietą</em> Vilniaus mieste</h2>
+      <p>Turite idėją ar žinote perspektyvią vietą verslui? Pasidalinkite ja su mūsų bendruomene ir padėkite kurti Vilniaus ateitį!</p>
+      <div class="invest-buttons">
+        <a href="pages/map_4.html" class="btn-primary">Pasiūlyti vietą →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="contact-header">
+      <div class="contact-icon">✉️</div>
+      <h2>Susisiekite su mumis</h2>
+      <p>Praneškite mums, kaip galime padėti.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="contact-item-icon">💬</div>
+        <h3>Rašykite mums</h3>
+        <p>Atsakome per 1–2 darbo dienas.</p>
+        <a href="mailto:info@vilniausdnr.lt">info@vilniausdnr.lt</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col-left">
+        <div class="footer-logo">Vilniaus miesto DNR</div>
+        <p>Vilniaus miesto erdvinių duomenų portalas. Interaktyvūs žemėlapiai skirti verslo galimybių analizei.</p>
+      </div>
+      <div class="footer-col-right">
+        <div class="footer-links-group">
+          <h4>Žemėlapiai</h4>
+          <ul>
+            <li><a href="pages/map_1.html">Gyventojų struktūra</a></li>
+            <li><a href="pages/map_2.html">Įmonių pokyčiai</a></li>
+            <li><a href="pages/map_3.html">Sklypų paskirtys</a></li>
+            <li><a href="pages/map_4.html">Vilniaus pastatai</a></li>
+            <li><a href="pages/map_5.html">Gatvių duomenys</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Nuorodos</h4>
+          <ul>
+            <li><a href="https://www.geoportal.lt" target="_blank">Geoportalas</a></li>
+            <li><a href="https://vilnius.lt" target="_blank">Vilniaus savivaldybė</a></li>
+            <li><a href="https://www.vu.lt" target="_blank">Vilniaus universitetas</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Vilniaus miesto DNR. Demonstracinė svetainė mokymo tikslams.</p>
+    </div>
+  </footer>
+
+  <script>
+    const grid = document.querySelector('.maps-grid');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    nextBtn.addEventListener('click', () => {
+      grid.scrollBy({ left: 400, behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      grid.scrollBy({ left: -400, behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>

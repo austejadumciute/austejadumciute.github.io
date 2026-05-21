@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Įmonių pokyčiai — Vilniaus miesto DNR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="map.css" />
+  </head>
+  <body>
+
+      <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">
+      <img src="../img/logo.png" width="30" height="30">
+      Vilniaus miesto DNR
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Pradžia</a></li>
+      <li><a href="#about">Apie</a></li>
+      <li><a href="#maps">Žemėlapiai</a></li>
+      <li><a href="#contact">Kontaktai</a></li>
+    </ul>
+  </nav>
+
+    <!-- ANTRAŠTĖ -->
+    <section class="map-page-header">
+      <div class="map-page-header-inner">
+        <a href="../index.html#maps" class="map-back">← Visi žemėlapiai</a>
+        <span class="map-page-badge">Verslas</span>
+        <h1>Įmonių pokyčiai</h1>
+        <p>Vilniaus miesto įregistruotų ir išregistruotų įmonių pasiskirstymas pagal teisinę formą. Dviejų langų žemėlapis vizualizuoja naujų įmonių steigimo vietas (kairėje) bei uždarytų įmonių pasiskirstymą (dešinėje) 1990–2016 m. laikotarpiu.</p>
+      </div>
+    </section>
+
+    <!-- ŽEMĖLAPIS + ŠONINĖ JUOSTA -->
+    <section class="map-page-content">
+      <div class="map-page-content-inner" id="mapLayout">
+
+        <!-- Žemėlapis -->
+        <div class="map-frame-wrapper">
+          <iframe
+            src="https://austejadumciute.github.io/1_praktinis_maps/imones.html"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+<button class="sidebar-toggle" id="sidebarToggle">◀</button>
+
+        <div class="map-sidebar" id="mapSidebar">
+          <div class="sidebar-content" id="sidebarContent">
+
+            <div>
+              <div class="map-sidebar-title">Apie žemėlapį</div>
+              <div class="map-sidebar-subtitle">Įmonių steigimo ir uždarymo analizė pagal formą</div>
+            </div>
+
+            <div class="map-sidebar-divider"></div>
+
+            <div class="map-info-card">
+              <div class="map-info-icon">📈</div>
+              <h3>Įregistruotos įmonės (Kairėje)</h3>
+              <p><strong>Spalva:</strong> Žymi juridinio asmens formą.</p>
+            </div>
+
+            <div class="map-info-card">
+              <div class="map-info-icon">📉</div>
+              <h3>Išregistruotos įmonės (Dešinėje)</h3>
+              <p><strong>Spalva:</strong> Žymi juridinio asmens formą.</p>
+            </div>
+
+            <div class="map-info-card">
+              <div class="map-info-icon">📅</div>
+              <h3>Laikotarpis</h3>
+              <p>Žemėlapio apačioje esančiu filtru galima pasirinkti 1990–2026m. įregistravimo ar išregistravimo datas.
+               <p>Kiekvienas taškas atitinka vieną juridinį asmenį.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <script>
+      const toggle = document.getElementById('sidebarToggle');
+      const content = document.getElementById('sidebarContent');
+      const sidebar = document.getElementById('mapSidebar');
+      const layout = document.getElementById('mapLayout');
+
+      let collapsed = false;
+      const SIDEBAR_WIDTH = 380;
+
+      function updateTogglePosition(isCollapsed) {
+        toggle.style.right = isCollapsed ? '20px' : SIDEBAR_WIDTH + 'px';
+      }
+
+      toggle.addEventListener('click', () => {
+        collapsed = !collapsed;
+        content.classList.toggle('hidden', collapsed);
+        toggle.innerHTML = collapsed ? '▶' : '◀';
+        sidebar.classList.toggle('collapsed', collapsed);
+        layout.style.gridTemplateColumns = collapsed
+          ? '1fr 0px'
+          : `1fr ${SIDEBAR_WIDTH}px`;
+        updateTogglePosition(collapsed);
+      });
+
+      updateTogglePosition(false);
+    </script>
+    <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col-left">
+        <div class="footer-logo">Vilniaus miesto DNR</div>
+        <p>Vilniaus miesto erdvinių duomenų portalas. Interaktyvūs žemėlapiai skirti verslo galimybių analizei.</p>
+      </div>
+      <div class="footer-col-right">
+        <div class="footer-links-group">
+          <h4>Žemėlapiai</h4>
+          <ul>
+            <li><a href="pages/map_1.html">Gyventojų struktūra</a></li>
+            <li><a href="pages/map_2.html">Įmonių pokyčiai</a></li>
+            <li><a href="pages/map_3.html">Sklypų paskirtys</a></li>
+            <li><a href="pages/map_4.html">Vilniaus pastatai</a></li>
+            <li><a href="pages/map_5.html">Gatvių duomenys</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Nuorodos</h4>
+          <ul>
+            <li><a href="https://www.geoportal.lt" target="_blank">Geoportalas</a></li>
+            <li><a href="https://vilnius.lt" target="_blank">Vilniaus savivaldybė</a></li>
+            <li><a href="https://www.vu.lt" target="_blank">Vilniaus universitetas</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Vilniaus miesto DNR. Demonstracinė svetainė mokymo tikslams.</p>
+    </div>
+  </footer>
+
+  </body>
+</html>
