@@ -15,7 +15,7 @@
       Vilniaus miesto DNR
     </div>
     <ul class="nav-links">
-      <li><a href="#" class="active">Pradžia</a></li>
+      <li><a href="#home" class="active">Pradžia</a></li>
       <li><a href="#about">Apie</a></li>
       <li><a href="#maps">Žemėlapiai</a></li>
       <li><a href="#contact">Kontaktai</a></li>
@@ -23,7 +23,7 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="hero-content">
       <h1>Vilniaus miesto<br />DNR</h1>
       <p>Atrask Vilniaus miesto verslo galimybes naudodamasisi interaktyviais GIS žemėlapiais ir duomenų analize.</p>
@@ -36,43 +36,47 @@
 
   <!-- ABOUT -->
   <section id="about" class="description">
-    <div class="description-top">
-      <div class="description-left">
-        <h2>Kodėl verta <em>investuoti į Vilnių?</em></h2>
-      </div>
-      <div class="description-right">
-        <p>
-          Vilnius – sparčiai augantis Baltijos regiono miestas, kuriame verslo galimybės formuojasi kasdien.
-          Šiame portale interaktyvūs žemėlapiai leidžia pažvelgti į Vilnių kitaip – ne tik kaip į gatves ar
-          pastatus, bet kaip į gyvą sistemą, kur matosi verslo vietos, gyventojų tankis, infrastruktūra ir
-          miesto augimo kryptys. Visa tai paremta atvirais erdviniais duomenimis – Vilniaus miesto DNR.
-        </p>
-        <p class="description-note">Tai demonstracinė svetainė, skirta mokymo tikslams.</p>
-        <a href="#maps" class="btn-explore">Naršyti žemėlapius →</a>
-      </div>
-    </div>
+    <div class="description-inner">
 
-    <div class="description-cards">
-      <div class="description-card">
-        <div class="card-icon">👥</div>
-        <h3>642 000 gyventojų</h3>
-        <p>Augantis miestas, kuriame kasdien susitinka žmonės iš skirtingų šalių, idėjų ir kultūrų.</p>
+      <div class="description-top">
+        <div class="description-left">
+          <h2>Kodėl verta <em>investuoti į Vilnių?</em></h2>
+        </div>
+        <div class="description-right">
+          <p>
+            Vilnius – sparčiai augantis Baltijos regiono miestas, kuriame verslo galimybės formuojasi kasdien.
+            Šiame portale interaktyvūs žemėlapiai leidžia pažvelgti į Vilnių kitaip – ne tik kaip į gatves ar
+            pastatus, bet kaip į gyvą sistemą, kur matosi verslo vietos, gyventojų tankis, infrastruktūra ir
+            miesto augimo kryptys. Visa tai paremta atvirais erdviniais duomenimis – Vilniaus miesto DNR.
+          </p>
+          <p class="description-note">Tai demonstracinė svetainė, skirta mokymo tikslams.</p>
+          <a href="#maps" class="btn-explore">Naršyti žemėlapius →</a>
+        </div>
       </div>
-      <div class="description-card">
-        <div class="card-icon">📈</div>
-        <h3>45.8% BVP</h3>
-        <p>Beveik pusė Lietuvos ekonomikos sukuriama Vilniuje.</p>
+
+      <div class="description-cards">
+        <div class="description-card">
+          <div class="card-icon">👥</div>
+          <h3>642 000 gyventojų</h3>
+          <p>Augantis miestas, kuriame kasdien susitinka žmonės iš skirtingų šalių, idėjų ir kultūrų.</p>
+        </div>
+        <div class="description-card">
+          <div class="card-icon">📈</div>
+          <h3>45.8% BVP</h3>
+          <p>Beveik pusė Lietuvos ekonomikos sukuriama Vilniuje.</p>
+        </div>
+        <div class="description-card">
+          <div class="card-icon">🏢</div>
+          <h3>Verslo centras</h3>
+          <p>Daugiau nei 40 000 registruotų įmonių mieste.</p>
+        </div>
+        <div class="description-card">
+          <div class="card-icon">🌍</div>
+          <h3>Augantis startuolių centras</h3>
+          <p>Vilnius – namai tokiems vardams kaip Vinted, Nord Security, Oxylabs ir Hostinger.</p>
+        </div>
       </div>
-      <div class="description-card">
-        <div class="card-icon">🏢</div>
-        <h3>Verslo centras</h3>
-        <p>Daugiau nei 40 000 registruotų įmonių mieste.</p>
-      </div>
-      <div class="description-card">
-        <div class="card-icon">🌍</div>
-        <h3>Augantis startuolių centras</h3>
-        <p>Vilnius – namai tokiems vardams kaip Vinted, Nord Security, Oxylabs ir Hostinger.</p>
-      </div>
+
     </div>
   </section>
 
@@ -203,7 +207,6 @@
     </div>
   </footer>
 
-  <!-- Žemėlapių slinkties valdymas -->
   <script>
     const mapsGrid = document.querySelector('.maps-grid');
     const prevBtn = document.getElementById('prevBtn');

@@ -113,8 +113,12 @@ body {
 
 /* ── ABOUT ── */
 .description {
-  padding: 5rem 3rem;
   background: #faf9ff;
+  padding: 5rem 0;
+}
+
+.description-inner {
+  padding: 0 3rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -439,12 +443,6 @@ body {
   margin-top: 1.5rem;
 }
 
-.contact-action .btn-primary {
-  display: inline-block;
-  width: auto;
-  padding: 0.85rem 2.5rem;
-}
-
 /* ── MYGTUKAI ── */
 .btn-primary {
   padding: 0.8rem 1.8rem;
@@ -460,6 +458,13 @@ body {
 .btn-primary:hover {
   background: #5b21b6;
   color: white;
+}
+
+/* ✔ perkeltas po .btn-primary, kad kaskada veiktų teisingai */
+.contact-action .btn-primary {
+  display: inline-block;
+  width: auto;
+  padding: 0.85rem 2.5rem;
 }
 
 .btn-outline {
@@ -818,7 +823,6 @@ body {
 /* ── INVEST ŽEMĖLAPIS ── */
 .map-page-content-inner--full {
   display: block;
-  grid-template-columns: 1fr;
 }
 
 .map-frame-wrapper--full {
@@ -832,6 +836,9 @@ body {
 }
 
 .survey-wrapper iframe {
-  border: none;
   display: block;
+}
+
+iframe {
+  border: none;
 }
