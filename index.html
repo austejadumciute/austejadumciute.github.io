@@ -11,7 +11,7 @@
   <!-- NAV -->
   <nav class="nav">
     <div class="nav-logo">
-      <img src="img/logo.png" width="30" height="30">
+      <img src="img/logo.png" width="30" height="30" alt="Vilniaus miesto DNR logotipas">
       Vilniaus miesto DNR
     </div>
     <ul class="nav-links">
@@ -42,11 +42,12 @@
       </div>
       <div class="description-right">
         <p>
-          Vilnius – sparčiai augantis Baltijos regiono miestas, kuriame verslo galimybės formuojasi kasdien. Čia duomenys virsta sprendimais, o erdvė – realiu potencialu.<br>
-          Šiame portale interaktyvūs žemėlapiai leidžia pažvelgti į Vilnių kitaip – ne tik kaip į gatves ar pastatus, bet kaip į gyvą sistemą, kur matosi verslo vietos, gyventojų tankis, infrastruktūra ir miesto augimo kryptys.
-          Visa tai paremta atvirais erdviniais duomenimis, apjungiančiais informaciją apie gyventojus, įmones, sklypus ir miesto struktūrą į vieną vaizdą – Vilniaus miesto DNR.<br><br>
-          Tai demonstracinė svetainė, visas joje pateikiamas turinys yra skirtas mokymo tikslams.
+          Vilnius – sparčiai augantis Baltijos regiono miestas, kuriame verslo galimybės formuojasi kasdien.
+          Šiame portale interaktyvūs žemėlapiai leidžia pažvelgti į Vilnių kitaip – ne tik kaip į gatves ar
+          pastatus, bet kaip į gyvą sistemą, kur matosi verslo vietos, gyventojų tankis, infrastruktūra ir
+          miesto augimo kryptys. Visa tai paremta atvirais erdviniais duomenimis – Vilniaus miesto DNR.
         </p>
+        <p class="description-note">Tai demonstracinė svetainė, skirta mokymo tikslams.</p>
         <a href="#maps" class="btn-explore">Naršyti žemėlapius →</a>
       </div>
     </div>
@@ -80,15 +81,15 @@
     <div class="maps-header">
       <h2>Vilniaus miesto <em>žemėlapiai</em></h2>
       <div class="maps-arrows">
-        <button class="arrow-btn" id="prevBtn">←</button>
-        <button class="arrow-btn active" id="nextBtn">→</button>
+        <button class="arrow-btn" id="prevBtn" aria-label="Ankstesnis žemėlapis">←</button>
+        <button class="arrow-btn active" id="nextBtn" aria-label="Kitas žemėlapis">→</button>
       </div>
     </div>
 
     <div class="maps-grid">
       <div class="map-card">
         <div class="map-card-image">
-          <img src="img/map_1.png" alt="Gyventojai" />
+          <img src="img/map_1.png" alt="Vilniaus gyventojų struktūra" />
         </div>
         <div class="map-card-text">
           <h3>Vilniaus gyventojų struktūra</h3>
@@ -99,7 +100,7 @@
 
       <div class="map-card">
         <div class="map-card-image">
-          <img src="img/map_2.png" alt="Gyventojų tankumas" />
+          <img src="img/map_2.png" alt="Įmonių pokyčiai Vilniuje" />
         </div>
         <div class="map-card-text">
           <h3>Įmonių pokyčiai</h3>
@@ -110,11 +111,11 @@
 
       <div class="map-card">
         <div class="map-card-image">
-          <img src="img/map_3.png" alt="WMS ortofoto" />
+          <img src="img/map_3.png" alt="Vilniaus sklypų paskirtys ir VT stotelės" />
         </div>
         <div class="map-card-text">
-          <h3>Vilniaus sklypų paskirtys</h3>
-          <p>Interaktyvus žemėlapis, kuriame vaizduojamas Vilniaus miesto sklypų zonavimas ir naudojimo paskirtys – nuo infrastruktūros teritorijų iki gyvenamųjų bei kitų funkcinio naudojimo tipų.</p>
+          <h3>Vilniaus sklypų paskirtys ir VT stotelės</h3>
+          <p>Interaktyvus žemėlapis, kuriame vaizduojama Vilniaus sklypų paskirtys ir VT stotelių išsidėstymas.</p>
           <a href="pages/map_3.html" class="btn-map">Naršyti žemėlapį →</a>
         </div>
       </div>
@@ -132,7 +133,7 @@
 
       <div class="map-card">
         <div class="map-card-image">
-          <img src="img/map_5.png" alt="Investiciniai objektai" />
+          <img src="img/map_5.png" alt="Gatvių, eismo įvykių ir policijos duomenys" />
         </div>
         <div class="map-card-text">
           <h3>Gatvių, eismo įvykių ir policijos duomenys</h3>
@@ -150,7 +151,7 @@
       <h2>Pasiūlykite savo <em>investicinę vietą</em> Vilniaus mieste</h2>
       <p>Turite idėją ar žinote perspektyvią vietą verslui? Pasidalinkite ja su mūsų bendruomene ir padėkite kurti Vilniaus ateitį!</p>
       <div class="invest-buttons">
-        <a href="pages/map_4.html" class="btn-primary">Pasiūlyti vietą →</a>
+        <a href="pages/invest.html" class="btn-primary">Pasiūlyti vietą →</a>
       </div>
     </div>
   </section>
@@ -160,15 +161,10 @@
     <div class="contact-header">
       <div class="contact-icon">✉️</div>
       <h2>Susisiekite su mumis</h2>
-      <p>Praneškite mums, kaip galime padėti.</p>
+      <p>Padėkite mums tobulinti Vilniaus miesto DNR.</p>
     </div>
-    <div class="contact-grid">
-      <div class="contact-item">
-        <div class="contact-item-icon">💬</div>
-        <h3>Rašykite mums</h3>
-        <p>Atsakome per 1–2 darbo dienas.</p>
-        <a href="mailto:info@vilniausdnr.lt">info@vilniausdnr.lt</a>
-      </div>
+    <div class="contact-action">
+      <a href="pages/contacts.html" class="btn-primary">Susisiekti →</a>
     </div>
   </section>
 
@@ -188,11 +184,13 @@
             <li><a href="pages/map_3.html">Sklypų paskirtys</a></li>
             <li><a href="pages/map_4.html">Vilniaus pastatai</a></li>
             <li><a href="pages/map_5.html">Gatvių duomenys</a></li>
+            <li><a href="pages/invest.html">Investiciniai objektai</a></li>
           </ul>
         </div>
         <div class="footer-links-group">
           <h4>Nuorodos</h4>
           <ul>
+            <li><a href="https://www.registrucentras.lt/" target="_blank">Registrų centras</a></li>
             <li><a href="https://www.geoportal.lt" target="_blank">Geoportalas</a></li>
             <li><a href="https://vilnius.lt" target="_blank">Vilniaus savivaldybė</a></li>
             <li><a href="https://www.vu.lt" target="_blank">Vilniaus universitetas</a></li>
@@ -205,18 +203,20 @@
     </div>
   </footer>
 
+  <!-- Žemėlapių slinkties valdymas -->
   <script>
-    const grid = document.querySelector('.maps-grid');
+    const mapsGrid = document.querySelector('.maps-grid');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
 
-    nextBtn.addEventListener('click', () => {
-      grid.scrollBy({ left: 400, behavior: 'smooth' });
-    });
-
-    prevBtn.addEventListener('click', () => {
-      grid.scrollBy({ left: -400, behavior: 'smooth' });
-    });
+    if (mapsGrid && prevBtn && nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        mapsGrid.scrollBy({ left: 400, behavior: 'smooth' });
+      });
+      prevBtn.addEventListener('click', () => {
+        mapsGrid.scrollBy({ left: -400, behavior: 'smooth' });
+      });
+    }
   </script>
 
 </body>
