@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gatvių, eismo įvykių ir policijos duomenys — Vilniaus miesto DNR</title>
+    <!-- Pagrindinis svetainės stilių failas -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Žemėlapio puslapiams skirtas stilių failas -->
+    <link rel="stylesheet" href="../css/map.css" />
+  </head>
+  <body>
+
+    <!-- NAV -->
+    <!-- Navigacijos juosta – leidžia grįžti į pagrindinį puslapį ar pereiti į kitas skiltis -->
+    <nav class="nav nav--dark">
+      <div class="nav-logo">
+        <img src="../img/logo.png" width="30" height="30" alt="Vilniaus miesto DNR logotipas">
+        Vilniaus miesto DNR
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Pradžia</a></li>
+        <li><a href="../index.html#about">Apie</a></li>
+        <li><a href="../index.html#maps" class="active">Žemėlapiai</a></li>
+        <li><a href="../index.html#contact">Kontaktai</a></li>
+      </ul>
+    </nav>
+
+    <!-- MAP HEADER -->
+    <!-- Žemėlapio antraštės skiltis – rodo pavadinimą, kategoriją ir trumpą aprašymą -->
+    <section class="map-page-header">
+      <div class="map-page-header-inner">
+        <a href="../index.html#maps" class="map-back">← Visi žemėlapiai</a>
+        <span class="map-page-badge">Saugumas ir transportas</span>
+        <h1>Vilniaus gatvių, eismo įvykių ir policijos duomenys</h1>
+        <p>Interaktyvus žemėlapis, jungiantis Vilniaus gatvių tinklą su Eismo įvykių informacinės sistemos (EĮIS) ir Policijos registruojamų įvykių registro (PRĮR) duomenimis. Identifikuokite avaringumo židinius, pavojingas zonas ir planuokite saugesnius maršrutus.</p>
+      </div>
+    </section>
+
+    <!-- MAP CONTENT -->
+    <!-- Pagrindinis žemėlapio blokas – iframe su žemėlapiu kairėje ir informacijos juosta dešinėje -->
+    <section class="map-page-content">
+      <div class="map-page-content-inner" id="mapLayout">
+
+        <!-- Žemėlapio iframe konteineris -->
+        <div class="map-frame-wrapper">
+          <iframe
+            src="https://austejadumciute.github.io/2_praktinis_maps/map_gatves.html"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            title="Vilniaus gatvių, eismo įvykių ir policijos duomenys"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- Šoninės juostos slėpimo/rodymo mygtukas -->
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Slėpti arba rodyti šoninę juostą">◀</button>
+
+        <!-- Šoninė informacijos juosta -->
+        <div class="map-sidebar" id="mapSidebar">
+          <div class="sidebar-content" id="sidebarContent">
+
+            <div class="sidebar-header">
+              <div class="map-sidebar-title">Apie žemėlapį</div>
+              <div class="map-sidebar-subtitle">Eismo įvykių ir policijos duomenys</div>
+            </div>
+
+            <div class="map-sidebar-divider"></div>
+
+            <div class="map-info-card">
+              <div class="map-info-icon">🛣️</div>
+              <h3>Gatvių tinklas</h3>
+              <p><strong>Mėlynos linijos:</strong> Leidžia analizuoti, kuriose gatvėse ir sankryžose koncentruojasi daugiausia eismo įvykių ir policijos iškvietimų.</p>
+            </div>
+
+            <div class="map-info-card">
+              <div class="map-info-icon">🚨</div>
+              <h3>PRĮR policijos įvykiai</h3>
+              <p><strong>Šešiakampiai:</strong> Agreguoti policijos pranešimai pagal teritorijas.</p>
+              <p>Tamsesnė spalva = didesnis įvykių tankis.</p>
+            </div>
+
+            <div class="map-info-card">
+              <div class="map-info-icon">🚗</div>
+              <h3>EĮIS eismo įvykiai</h3>
+              <p><strong>Violetiniai taškai:</strong> Kiekvienas taškas = vienas registruotas eismo įvykis.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- Puslapio apačia – logotipas, nuorodos į žemėlapius ir išorinius šaltinius, autorinės teisės -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-col-left">
+          <div class="footer-logo">Vilniaus miesto DNR</div>
+          <p>Vilniaus miesto erdvinių duomenų portalas. Interaktyvūs žemėlapiai skirti verslo galimybių analizei.</p>
+        </div>
+        <div class="footer-col-right">
+          <div class="footer-links-group">
+            <h4>Žemėlapiai</h4>
+            <ul>
+              <li><a href="map_1.html">Gyventojų struktūra</a></li>
+              <li><a href="map_2.html">Įmonių pokyčiai</a></li>
+              <li><a href="map_3.html">Sklypų paskirtys</a></li>
+              <li><a href="map_4.html">Vilniaus pastatai</a></li>
+              <li><a href="map_5.html">Gatvių duomenys</a></li>
+              <li><a href="invest.html">Investiciniai objektai</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-group">
+            <h4>Nuorodos</h4>
+            <ul>
+              <li><a href="https://www.registrucentras.lt/" target="_blank">Registrų centras</a></li>
+              <li><a href="https://www.geoportal.lt" target="_blank">Geoportalas</a></li>
+              <li><a href="https://vilnius.lt" target="_blank">Vilniaus savivaldybė</a></li>
+              <li><a href="https://www.vu.lt" target="_blank">Vilniaus universitetas</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Vilniaus miesto DNR. Demonstracinė svetainė mokymo tikslams.</p>
+      </div>
+    </footer>
+
+    <!-- JS failas iškeltas į atskirą katalogą -->
+    <script src="../map.js"></script>
+
+  </body>
+</html>
