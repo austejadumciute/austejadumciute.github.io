@@ -1,4 +1,3 @@
-/* ── BENDRA ── */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,6 +23,12 @@ body {
   padding: 1.25rem 3rem;
 }
 
+.nav--dark {
+  position: relative;
+  background: #0f0f1a;
+  z-index: 1000;
+}
+
 .nav-logo {
   display: flex;
   align-items: center;
@@ -43,7 +48,7 @@ body {
 }
 
 .nav-links a {
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 0.95rem;
   padding: 0.4rem 1rem;
   border-radius: 999px;
@@ -106,75 +111,6 @@ body {
   gap: 1rem;
 }
 
-/* ── MYGTUKAI ── */
-.btn-primary {
-  padding: 0.8rem 1.8rem;
-  background: #7c3aed;
-  color: white;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-  border: none;
-  transition: background 0.2s;
-}
-
-.btn-primary:hover {
-  background: #5b21b6;
-  color: white;
-}
-
-.btn-outline {
-  padding: 0.8rem 1.8rem;
-  background: transparent;
-  color: white;
-  border: 1.5px solid white;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s;
-}
-
-.btn-outline:hover {
-  background: white;
-  color: #0a0a0f;
-}
-
-.btn-explore {
-  display: inline-block;
-  padding: 0.8rem 1.8rem;
-  background: #0a0a0f;
-  color: white;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  width: fit-content;
-  transition: background 0.2s;
-}
-
-.btn-explore:hover {
-  background: #7c3aed;
-}
-
-.btn-map {
-  display: inline-block;
-  width: fit-content;
-  align-self: flex-start;
-  margin-top: auto;
-  padding: 0.55rem 1.2rem;
-  background: #0a0a0f;
-  color: white;
-  border-radius: 999px;
-  text-decoration: none;
-  font-size: 0.82rem;
-  font-weight: 600;
-  transition: background 0.2s;
-}
-
-.btn-map:hover {
-  background: #7c3aed;
-}
-
 /* ── ABOUT ── */
 .description {
   padding: 5rem 3rem;
@@ -234,7 +170,7 @@ body {
 
 .description-card:hover {
   border-color: #a78bfa;
-  box-shadow: 0 8px 24px rgba(124,58,237,0.08);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.08);
   transform: translateY(-3px);
 }
 
@@ -326,7 +262,7 @@ body {
 }
 
 .map-card:hover {
-  box-shadow: 0 12px 40px rgba(124,58,237,0.1);
+  box-shadow: 0 12px 40px rgba(124, 58, 237, 0.1);
   transform: translateY(-4px);
   border-color: #a78bfa;
 }
@@ -391,7 +327,7 @@ body {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   margin-bottom: 1.2rem;
 }
 
@@ -409,7 +345,7 @@ body {
 }
 
 .invest-card p {
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 0.95rem;
   line-height: 1.7;
   margin-bottom: 2rem;
@@ -422,24 +358,9 @@ body {
   flex-wrap: wrap;
 }
 
-.invest-card .btn-primary {
-  background: #7c3aed;
-  border: none;
-  padding: 0.85rem 1.8rem;
-  border-radius: 999px;
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s;
-}
-
-.invest-card .btn-primary:hover {
-  background: #5b21b6;
-}
-
 /* ── CONTACT ── */
 .contact {
-   padding: 2rem 3rem 4rem;
+  padding: 2rem 3rem 4rem;
   background: #fff;
   max-width: 1200px;
   margin: 0 auto;
@@ -467,13 +388,6 @@ body {
   font-size: 0.95rem;
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
 .contact-item {
   border: 1.5px solid #e5e0ff;
   border-radius: 16px;
@@ -484,7 +398,7 @@ body {
 
 .contact-item:hover {
   border-color: #a78bfa;
-  box-shadow: 0 8px 24px rgba(124,58,237,0.08);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.08);
   transform: translateY(-3px);
 }
 
@@ -519,6 +433,87 @@ body {
   color: #5b21b6;
 }
 
+.contact-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.contact-action .btn-primary {
+  display: inline-block;
+  width: auto;
+  padding: 0.85rem 2.5rem;
+}
+
+/* ── MYGTUKAI ── */
+.btn-primary {
+  padding: 0.8rem 1.8rem;
+  background: #7c3aed;
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #5b21b6;
+  color: white;
+}
+
+.btn-outline {
+  padding: 0.8rem 1.8rem;
+  background: transparent;
+  color: white;
+  border: 1.5px solid white;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #0a0a0f;
+}
+
+.btn-explore {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background: #0a0a0f;
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  width: fit-content;
+  transition: background 0.2s;
+}
+
+.btn-explore:hover {
+  background: #7c3aed;
+}
+
+.btn-map {
+  display: inline-block;
+  width: fit-content;
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 0.55rem 1.2rem;
+  background: #0a0a0f;
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-map:hover {
+  background: #7c3aed;
+}
+
 /* ── FOOTER ── */
 .footer {
   background: #0f0f1a;
@@ -534,7 +529,7 @@ body {
   gap: 4rem;
   max-width: 100%;
   padding: 0 2rem 2rem;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-col-left {
@@ -550,7 +545,7 @@ body {
 
 .footer-col-left p {
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.7;
 }
 
@@ -579,7 +574,7 @@ body {
 }
 
 .footer-links-group ul li a {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-size: 0.85rem;
   transition: color 0.2s;
@@ -594,7 +589,7 @@ body {
   margin: 1.5rem auto 0;
   text-align: center;
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* ── MAP PAGE HEADER ── */
@@ -610,22 +605,24 @@ body {
 }
 
 .map-back {
-  margin-top: 1rem;
   display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
   color: #a78bfa;
   text-decoration: none;
   font-size: 0.88rem;
   font-weight: 600;
-  margin-bottom: 1.2rem;
   transition: color 0.2s;
 }
 
-.map-back:hover { color: #7c3aed; }
+.map-back:hover {
+  color: #7c3aed;
+}
 
 .map-page-badge {
   display: inline-block;
   padding: 0.3rem 0.9rem;
-  background: rgba(124,58,237,0.3);
+  background: rgba(124, 58, 237, 0.3);
   color: #a78bfa;
   border-radius: 999px;
   font-size: 0.78rem;
@@ -642,7 +639,7 @@ body {
 }
 
 .map-page-header p {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 0.95rem;
   line-height: 1.75;
   max-width: 700px;
@@ -652,8 +649,9 @@ body {
 .map-page-content {
   padding: 0;
   position: relative;
-  height: calc(100vh - 56px); /* 56px = navbar aukštis */
+  height: calc(100vh - 56px);
   overflow: hidden;
+  margin-bottom: 5rem;
 }
 
 .map-page-content-inner {
@@ -663,6 +661,7 @@ body {
   align-items: start;
   height: 100%;
 }
+
 /* ── ŽEMĖLAPIS ── */
 .map-frame-wrapper {
   width: 100%;
@@ -679,33 +678,27 @@ body {
 /* ── SLĖPTI MYGTUKAS ── */
 .sidebar-toggle {
   position: absolute;
-  top: 50%;
+  top: 50vh;
   right: 380px;
-
   transform: translate(50%, -50%);
-
   width: 40px;
   height: 40px;
-
   background: #7c3aed;
   color: white;
   border: none;
   border-radius: 50%;
-
   font-size: 0.9rem;
   cursor: pointer;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  box-shadow: 0 4px 12px rgba(124,58,237,0.4);
-
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
   z-index: 1000;
+  transition: background 0.2s, right 0.3s ease;
+}
 
-  transition:
-    background 0.2s,
-    right 0.3s ease;
+.sidebar-toggle:hover {
+  background: #5b21b6;
 }
 
 /* ── ŠONINĖ JUOSTA ── */
@@ -737,7 +730,15 @@ body {
   gap: 1.5rem;
 }
 
-.sidebar-content.hidden { display: none; }
+.sidebar-content.hidden {
+  display: none;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
 
 .map-sidebar-title {
   font-size: 1rem;
@@ -767,7 +768,7 @@ body {
 
 .map-info-card:hover {
   border-color: #a78bfa;
-  box-shadow: 0 8px 24px rgba(124,58,237,0.08);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.08);
   transform: translateY(-2px);
 }
 
@@ -799,7 +800,9 @@ body {
   border-bottom: 1px solid #e5e0ff;
 }
 
-.map-stat:last-child { border-bottom: none; }
+.map-stat:last-child {
+  border-bottom: none;
+}
 
 .map-stat-label {
   font-size: 0.85rem;
@@ -812,6 +815,23 @@ body {
   color: #7c3aed;
 }
 
-.map-page-content {
-  margin-bottom: 5rem;
+/* ── INVEST ŽEMĖLAPIS ── */
+.map-page-content-inner--full {
+  display: block;
+  grid-template-columns: 1fr;
+}
+
+.map-frame-wrapper--full {
+  height: calc(100vh - 56px);
+}
+
+/* ── KONTAKTŲ FORMA ── */
+.survey-wrapper {
+  background: #f5f3ff;
+  padding-bottom: 80px;
+}
+
+.survey-wrapper iframe {
+  border: none;
+  display: block;
 }
