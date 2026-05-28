@@ -850,10 +850,15 @@ iframe {
   /* ── NAV ── */
   .nav {
     padding: 1rem 1.25rem;
-    position: relative;
+    position: absolute;
     background: transparent;
     flex-wrap: wrap;
     gap: 0.75rem;
+  }
+
+  /* Hero turi būti pakankamai aukštas, kad nav tilptų viduje */
+  .hero {
+    padding-top: 7rem;
   }
 
   /* Meniu nuorodos — slenkančios horizontaliai po logo */
