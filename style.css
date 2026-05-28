@@ -851,7 +851,7 @@ iframe {
   .nav {
     padding: 1rem 1.25rem;
     position: relative;
-    background: #0f0f1a;
+    background: transparent;
     flex-wrap: wrap;
     gap: 0.75rem;
   }
