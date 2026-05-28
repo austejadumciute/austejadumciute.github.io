@@ -856,6 +856,12 @@ iframe {
     gap: 0.75rem;
   }
 
+  /* Žemėlapių puslapiuose nav lieka juodas ir relative */
+  .nav--dark {
+    position: relative;
+    background: #0f0f1a;
+  }
+
   /* Hero turi būti pakankamai aukštas, kad nav tilptų viduje */
   .hero {
     padding-top: 7rem;
