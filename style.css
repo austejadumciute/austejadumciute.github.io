@@ -460,7 +460,6 @@ body {
   color: white;
 }
 
-/* ✔ perkeltas po .btn-primary, kad kaskada veiktų teisingai */
 .contact-action .btn-primary {
   display: inline-block;
   width: auto;
@@ -841,4 +840,263 @@ body {
 
 iframe {
   border: none;
+}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE — telefonai (≤ 768px)
+   ═══════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* ── NAV ── */
+  .nav {
+    padding: 1rem 1.25rem;
+    position: relative;
+    background: #0f0f1a;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  /* Meniu nuorodos — slenkančios horizontaliai po logo */
+  .nav-links {
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.25rem;
+    gap: 0.1rem;
+    /* paslėpti scrollbar */
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    font-size: 0.82rem;
+    padding: 0.35rem 0.75rem;
+    white-space: nowrap;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    height: 75vh;
+    padding: 0 1.25rem 2rem;
+    align-items: flex-end;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-outline {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* ── APIE ── */
+  .description {
+    padding: 3rem 0;
+  }
+
+  .description-inner {
+    padding: 0 1.25rem;
+  }
+
+  .description-top {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .description-left h2 {
+    font-size: 1.6rem;
+  }
+
+  /* Kortelės: 2 per eilutę telefone */
+  .description-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem;
+  }
+
+  /* ── ŽEMĖLAPIAI ── */
+  .maps {
+    padding: 3rem 1.25rem;
+  }
+
+  .maps-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .maps-header h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Slenkančios kortelės: mažesnio pločio */
+  .maps-grid {
+    grid-template-columns: repeat(5, 280px);
+    gap: 1rem;
+  }
+
+  /* ── INVEST ── */
+  .invest {
+    padding: 3rem 1.25rem;
+  }
+
+  .invest-card {
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+  }
+
+  .invest-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .invest-buttons {
+    flex-direction: column;
+  }
+
+  .invest-buttons .btn-primary,
+  .invest-buttons .btn-outline,
+  .invest-buttons .btn-explore {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* ── KONTAKTAI ── */
+  .contact {
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  .contact-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact-item {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    padding: 2.5rem 1.25rem 1.5rem;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .footer-grid {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 0 2rem;
+  }
+
+  .footer-col-left {
+    max-width: 100%;
+  }
+
+  .footer-col-right {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-start;
+  }
+
+  /* ── ŽEMĖLAPIO PUSLAPIS ── */
+  .map-page-header {
+    padding: 2rem 1.25rem;
+  }
+
+  .map-page-header h1 {
+    font-size: 1.4rem;
+  }
+
+  /* Telefone: žemėlapis viršuje, šoninė juosta apačioje */
+  .map-page-content {
+    height: auto;
+    overflow: visible;
+    margin-bottom: 2rem;
+  }
+
+  .map-page-content-inner {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh auto;
+  }
+
+  .map-frame-wrapper {
+    height: 50vh;
+  }
+
+  .map-sidebar {
+    width: 100% !important;
+    height: auto;
+    border-left: none;
+    border-top: 1px solid #c4b5fd;
+  }
+
+  .map-sidebar.collapsed {
+    width: 100% !important;
+    height: 0;
+    padding: 0;
+  }
+
+  .sidebar-toggle {
+    top: 50vh;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}
+
+/* ── Planšetė (768px–1024px) ── */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .nav {
+    padding: 1rem 2rem;
+  }
+
+  .description-inner {
+    padding: 0 2rem;
+  }
+
+  .description-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .maps {
+    padding: 4rem 2rem;
+  }
+
+  .invest {
+    padding: 3rem 2rem;
+  }
+
+  .invest-card {
+    padding: 3rem 2.5rem;
+  }
+
+  .contact {
+    padding: 2rem 2rem 3rem;
+  }
+
+  .footer {
+    padding: 3rem 2rem 1.5rem;
+  }
+
+  .footer-col-right {
+    gap: 3rem;
+  }
+
+  .map-page-content-inner {
+    grid-template-columns: 1fr 300px;
+  }
+
+  .map-sidebar {
+    width: 300px;
+  }
 }
